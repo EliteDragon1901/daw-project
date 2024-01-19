@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Sparta </title>
+  
+  
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css'>
+<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.0.13/css/all.css'>
+      <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/all.css">
+	<link rel="icon" href="logo.png" type="image/x-icon">
+	  <link rel="stylesheet" href="css/styleacasa.css">
+	
+ <style> .imag{background-image: url("img/image.png");}  </style>
+      <style>
+      /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
+      .bb, .bb::before, .bb::after {
+  position: absolute;
+  top: 72%;
+  bottom:0;
+  left: 0;
+  right: 0;
+}
+
+.bb {
+  width: 200px;
+  height: 140px;
+  margin: auto;
+  background: url("//blog.codepen.io/wp-content/uploads/2012/06/Button-White-Large.png") no-repeat 50%/70% rgba(0, 0, 0, 0.1);
+  color: #69ca62;
+  box-shadow: inset 0 0 0 1px rgba(105, 202, 98, 0.5);
+}
+.bb::before, .bb::after {
+  content: '';
+  z-index: -10;
+  margin: -5%;
+  box-shadow: inset 0 0 0 2px;
+  animation: clipMe 8s linear infinite;
+}
+.bb::before {
+  animation-delay: -4s;
+}
+.bb:hover::after, .bb:hover::before {
+  background-color: rgba(255, 0, 0, 0.3);
+}
+
+@keyframes clipMe {
+  0%, 100% {
+    clip: rect(0px, 220px, 2px, 0px);
+  }
+  25% {
+    clip: rect(0px, 2px, 220px, 0px);
+  }
+  50% {
+    clip: rect(218px, 220px, 220px, 0px);
+  }
+  75% {
+    clip: rect(0px, 220px, 220px, 218px);
+  }
+}
+html,
+body {
+  height: 100%;
+}
+
+body {
+  position: relative;
+  background-color: #0f222b;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+    </style>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+</head>
+
+<body>
+
+  <div class="page-wrapper chiller-theme toggled" >
+  <a id="show-sidebar" class="btn btn-sm btn-dark" href="#">
+    <i class="fas fa-bars"></i>
+  </a>
+  <nav id="sidebar" class="sidebar-wrapper " style="background:rgb(99, 0, 0);" >
+    <div class="sidebar-content ">
+      <div class="sidebar-brand "style="float:right">
+        
+        <div id="close-sidebar" >
+          <i class="fas fa-times"></i>
+        </div>
+      </div>
+      <div class="sidebar-header"style="float:left">
+        <div class="user-pic">
+          <img class="img-responsive img-rounded" src="img/sp1.png" 
+            alt="User picture">
+        </div>
+        <div class="user-info">
+          <br><a href="index.html" ><p id="div2">SPARTA</p></a>
+          <!--span class="user-role">Administrator</span>
+          <span class="user-status">
+            <i class="fa fa-circle"></i>
+            <span>Online</span>
+          </span-->
+        </div>
+      </div>
+      <!-- sidebar-header  -->
+      
+      <!-- sidebar-search  -->
+      <div class="sidebar-menu" >
+        <ul>
+         
+		   <li>
+            <a href="index.html">
+              <i class="fa fa-folder"></i>
+              <span>Acasa</span>
+            </a>
+          </li>
+           <li class="sidebar-dropdown">
+            <a href="#">
+              <i class="far fa-gem"></i>
+              <span>Despre SPARTA</span>
+            </a>
+            <div class="sidebar-submenu">
+              <ul>
+                <li>
+                  <a href="Sparta.html">Sparta</a>
+                </li>
+                <li>
+                  <a href="Leonidas.html">Leonidas</a>
+                </li>
+                
+              </ul>
+            </div>
+          </li>
+         <li>
+         
+          <li class="sidebar-dropdown">
+            <a href="#">
+              <i class="far fa-gem"></i>
+              <span>Activitati</span>
+            </a>
+            <div class="sidebar-submenu">
+              <ul>
+                <li>
+                  <a href="rebus.html">Rebus</a>
+                </li>
+                <li>
+                  <a href="chestionar.html">Chestionar</a>
+                </li>
+				<li>
+                  <a href="puzzle.html">Puzzle</a>
+                </li>
+                
+              </ul>
+            </div>
+          </li>
+       
+          <li>
+            <a href="bibliografie.html">
+              <i class="fa fa-calendar"></i>
+              <span>Bibliografie</span>
+            </a>
+          </li>
+        </ul>
+		<br><br><br>
+
+  
+<div class="bb"><center><img src="img/spartamini.jpg" ></center></div>
+      </div>
+      <!-- sidebar-menu  -->
+    </div>
+    <!-- sidebar-content  -->
+   
+  </nav>
+  <!-- sidebar-wrapper  -->
+  <main class="page-content  " >
+    <div class="container-fluid acasa">
+    
+  <a href="index.html">Sparta</a>
+    </div>
+
+  </main>
+  <!-- page-content" -->
+</div>
+<!-- page-wrapper -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/esm/popper.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/js/bootstrap.js'></script>
+
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>

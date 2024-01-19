@@ -1,0 +1,26 @@
+#continut{max-width:900px; }
+
+dd{color:white;
+font-family: calibri;}
+
+
+.int{font-family:arial;
+color:white;
+font-weight:bold;
+font-size:15px;
+margin-left:5px;}
+
+dl{border-bottom:2px solid white;}
+
+
+input{
+	background-color:inherit;
+	border:none;
+	cursor:pointer;
+	outline:none;
+	color:white;
+	font-family:arial;
+	font-weight: bold;
+}
+
+input:hover {color: black;}

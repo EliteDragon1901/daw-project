@@ -1,0 +1,15 @@
+.int{color:white;
+font-family:arial;}
+
+.rebs{
+	background-color:inherit;
+	border:none;
+	cursor:pointer;
+	outline:none;
+	color:white;
+	font-family:arial;
+	font-weight: bold;
+}
+
+.rebs:hover {color: black;}
+td{color: white;}

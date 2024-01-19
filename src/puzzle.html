@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Sparta - puzzle</title>
+  
+ <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css'>
+<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.0.13/css/all.css'>
+      <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/all.css">
+  <link rel="icon" href="logo.png" type="image/x-icon" >
+   <link rel="stylesheet" href="css/stile.css">
+  <style>
+      /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
+      .bb, .bb::before, .bb::after {
+  position: absolute;
+  top: 72%;
+  bottom:0;
+  left: 0;
+  right: 0;
+}
+
+.bb {
+  width: 200px;
+  height: 140px;
+  margin: auto;
+  background: url("//blog.codepen.io/wp-content/uploads/2012/06/Button-White-Large.png") no-repeat 50%/70% rgba(0, 0, 0, 0.1);
+  color: #69ca62;
+  box-shadow: inset 0 0 0 1px rgba(105, 202, 98, 0.5);
+}
+.bb::before, .bb::after {
+  content: '';
+  z-index: -10;
+  margin: -5%;
+  box-shadow: inset 0 0 0 2px;
+  animation: clipMe 8s linear infinite;
+}
+.bb::before {
+  animation-delay: -4s;
+}
+.bb:hover::after, .bb:hover::before {
+  background-color: rgba(255, 0, 0, 0.3);
+}
+
+@keyframes clipMe {
+  0%, 100% {
+    clip: rect(0px, 220px, 2px, 0px);
+  }
+  25% {
+    clip: rect(0px, 2px, 220px, 0px);
+  }
+  50% {
+    clip: rect(218px, 220px, 220px, 0px);
+  }
+  75% {
+    clip: rect(0px, 220px, 220px, 218px);
+  }
+}
+html,
+body {
+  height: 100%;
+}
+
+body {
+  position: relative;
+  background-color: #0f222b;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+    </style>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+<body>
+
+   <div class="page-wrapper chiller-theme toggled" >
+  <a id="show-sidebar" class="btn btn-sm btn-dark" href="#">
+    <i class="fas fa-bars"></i>
+  </a>
+  <nav id="sidebar" class="sidebar-wrapper " style="background:#5A3A68;" >
+    <div class="sidebar-content ">
+      <div class="sidebar-brand "style="float:right">
+        
+        <div id="close-sidebar" >
+          <i class="fas fa-times"></i>
+        </div>
+      </div>
+      <div class="sidebar-header"style="float:left">
+        <div class="user-pic">
+          <img class="img-responsive img-rounded" src="img/sp1.png" alt="User picture" style="width: 55px; height: 55px;">
+        </div>
+        <div class="user-info">
+          <br><a href="index.html" ><p id="div2">SPARTA</p></a>
+          <!--span class="user-role">Administrator</span>
+          <span class="user-status">
+            <i class="fa fa-circle"></i>
+            <span>Online</span>
+          </span-->
+        </div>
+      </div>
+      <!-- sidebar-header  -->
+      
+      <!-- sidebar-search  -->
+      <div class="sidebar-menu" >
+        <ul>
+         
+       <li>
+            <a href="index.html">
+              <i class="fa fa-folder"></i>
+              <span>Acasa</span>
+            </a>
+          </li>
+           <li class="sidebar-dropdown">
+            <a href="#">
+              <i class="far fa-gem"></i>
+              <span>Despre SPARTA</span>
+            </a>
+            <div class="sidebar-submenu">
+              <ul>
+                <li>
+                  <a href="Sparta.html">Sparta</a>
+                </li>
+                <li>
+                  <a href="Leonidas.html">Leonidas</a>
+                </li>
+                
+              </ul>
+            </div>
+          </li>
+         <li>
+         
+          <li class="sidebar-dropdown">
+            <a href="#">
+              <i class="far fa-gem"></i>
+              <span>Activitati</span>
+            </a>
+            <div class="sidebar-submenu">
+              <ul>
+                <li>
+                  <a href="rebus.html">Rebus</a>
+                </li>
+                <li>
+                  <a href="chestionar.html">Chestionar</a>
+                </li>
+        <li>
+                  <a href="puzzle.html">Puzzle</a>
+                </li>
+                
+              </ul>
+            </div>
+          </li>
+       
+          <li>
+            <a href="bibliografie.html">
+              <i class="fa fa-calendar"></i>
+              <span>Bibliografie</span>
+            </a>
+          </li>
+        </ul>
+    <br><br><br>
+
+  
+<div class="bb"><center><img src="img/spartamini.jpg" ></center></div>
+      </div>
+      <!-- sidebar-menu  -->
+    </div>
+    <!-- sidebar-content  -->
+   
+  </nav>
+  <!-- sidebar-wrapper  -->
+  <main class="page-content fundal " >
+    <div class="container-fluid">
+     <h1 id="div2">PUZZLE</h1></td> 
+      <hr>
+<input type="radio" id="Statuie" name="image" checked>
+<input type="radio" id="Formatie" name="image">
+<input type="radio" id="Harta" name="image">
+<center>
+<label class="selectBG" for="Statuie">Statuie</label>
+<img src="img/Statue.jpg" width="10%" style="opacity: 0.6"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<label class="selectBG" for="Formatie">Formatie</label>
+<img src="img/Shield.jpg" width="10%" style="opacity: 0.6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<label class="selectBG" for="Harta">Harta</label>
+<img src="img/Harta.jpg" width="10%" style="opacity: 0.6"> 
+</center>
+
+<input type="radio" id="a-up" name="a-vertical">
+<input type="radio" id="a-middle" name="a-vertical" checked>
+<input type="radio" id="a-down" name="a-vertical">
+<input type="radio" id="a-left" name="a-horazontal" checked>
+<input type="radio" id="a-center" name="a-horazontal">
+<input type="radio" id="a-right" name="a-horazontal">
+<input type="radio" id="b-up" name="b-vertical" checked>
+<input type="radio" id="b-middle" name="b-vertical">
+<input type="radio" id="b-down" name="b-vertical">
+<input type="radio" id="b-left" name="b-horazontal" checked>
+<input type="radio" id="b-center" name="b-horazontal">
+<input type="radio" id="b-right" name="b-horazontal">
+<input type="radio" id="c-up" name="c-vertical">
+<input type="radio" id="c-middle" name="c-vertical" checked>
+<input type="radio" id="c-down" name="c-vertical">
+<input type="radio" id="c-left" name="c-horazontal">
+<input type="radio" id="c-center" name="c-horazontal">
+<input type="radio" id="c-right" name="c-horazontal" checked>
+<input type="radio" id="d-up" name="d-vertical" checked>
+<input type="radio" id="d-middle" name="d-vertical">
+<input type="radio" id="d-down" name="d-vertical">
+<input type="radio" id="d-left" name="d-horazontal">
+<input type="radio" id="d-center" name="d-horazontal" checked>
+<input type="radio" id="d-right" name="d-horazontal">
+<input type="radio" id="e-up" name="e-vertical">
+<input type="radio" id="e-middle" name="e-vertical">
+<input type="radio" id="e-down" name="e-vertical" checked>
+<input type="radio" id="e-left" name="e-horazontal">
+<input type="radio" id="e-center" name="e-horazontal" checked>
+<input type="radio" id="e-right" name="e-horazontal">
+<input type="radio" id="f-up" name="f-vertical">
+<input type="radio" id="f-middle" name="f-vertical" checked>
+<input type="radio" id="f-down" name="f-vertical">
+<input type="radio" id="f-left" name="f-horazontal">
+<input type="radio" id="f-center" name="f-horazontal" checked>
+<input type="radio" id="f-right" name="f-horazontal">
+<input type="radio" id="g-up" name="g-vertical" checked>
+<input type="radio" id="g-middle" name="g-vertical">
+<input type="radio" id="g-down" name="g-vertical">
+<input type="radio" id="g-left" name="g-horazontal">
+<input type="radio" id="g-center" name="g-horazontal">
+<input type="radio" id="g-right" name="g-horazontal" checked>
+<input type="radio" id="h-up" name="h-vertical">
+<input type="radio" id="h-middle" name="h-vertical">
+<input type="radio" id="h-down" name="h-vertical" checked>
+<input type="radio" id="h-left" name="h-horazontal" checked>
+<input type="radio" id="h-center" name="h-horazontal">
+<input type="radio" id="h-right" name="h-horazontal">
+
+<div class="board">
+  <div class="peice-a">
+    <label for="a-up"></label>
+    <label for="a-middle"></label>
+    <label for="a-down"></label>
+    <label for="a-left"></label>
+    <label for="a-center"></label>
+    <label for="a-right"></label>
+  </div>
+  <div class="peice-b">
+    <label for="b-up"></label>
+    <label for="b-middle"></label>
+    <label for="b-down"></label>
+    <label for="b-left"></label>
+    <label for="b-center"></label>
+    <label for="b-right"></label>
+  </div>
+  <div class="peice-c">
+    <label for="c-up"></label>
+    <label for="c-middle"></label>
+    <label for="c-down"></label>
+    <label for="c-left"></label>
+    <label for="c-center"></label>
+    <label for="c-right"></label>
+  </div>
+  <div class="peice-d">
+    <label for="d-up"></label>
+    <label for="d-middle"></label>
+    <label for="d-down"></label>
+    <label for="d-left"></label>
+    <label for="d-center"></label>
+    <label for="d-right"></label>
+  </div>
+  <div class="peice-e">
+    <label for="e-up"></label>
+    <label for="e-middle"></label>
+    <label for="e-down"></label>
+    <label for="e-left"></label>
+    <label for="e-center"></label>
+    <label for="e-right"></label>
+  </div>
+  <div class="peice-f">
+    <label for="f-up"></label>
+    <label for="f-middle"></label>
+    <label for="f-down"></label>
+    <label for="f-left"></label>
+    <label for="f-center"></label>
+    <label for="f-right"></label>
+  </div>
+  <div class="peice-g">
+    <label for="g-up"></label>
+    <label for="g-middle"></label>
+    <label for="g-down"></label>
+    <label for="g-left"></label>
+    <label for="g-center"></label>
+    <label for="g-right"></label>
+  </div>
+  <div class="peice-h">
+    <label for="h-up"></label>
+    <label for="h-middle"></label>
+    <label for="h-down"></label>
+    <label for="h-left"></label>
+    <label for="h-center"></label>
+    <label for="h-right"></label>
+  </div>
+</div>
+
+
+<div class="winner">WINNER!</div>
+
+  </main>
+  <!-- page-content" -->
+</div>
+<!-- page-wrapper -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/esm/popper.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/js/bootstrap.js'></script>
+
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
